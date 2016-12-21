@@ -3,7 +3,7 @@ services:
   homie-dashboard:
     build: ./homie-dashboard
     ports:
-      - "80:80"
+      - "80:35589"
     links:
       - mosquitto
   mosquitto:
