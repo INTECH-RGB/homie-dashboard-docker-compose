@@ -1,0 +1,12 @@
+version: '2'
+services:
+  homie-dashboard:
+    build: ./homie-dashboard
+    ports:
+      - "80:80"
+    links:
+      - mosquitto
+  mosquitto:
+    build: ./mosquitto
+    ports:
+      - "1883:1883"
