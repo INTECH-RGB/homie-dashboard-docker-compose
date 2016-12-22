@@ -1,3 +1,3 @@
 FROM homiedashboard/armhf
 
-COPY settings.toml /data
+COPY settings.toml /homie-dashboard
