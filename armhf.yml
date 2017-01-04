@@ -1,0 +1,6 @@
+version: '2'
+services:
+  homie-dashboard:
+    build: ./homie-dashboard/armhf
+  mosquitto:
+    build: ./mosquitto/armhf

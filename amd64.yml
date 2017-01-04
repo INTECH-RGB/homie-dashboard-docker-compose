@@ -1,0 +1,6 @@
+version: '2'
+services:
+  homie-dashboard:
+    build: ./homie-dashboard/amd64
+  mosquitto:
+    build: ./mosquitto/amd64
