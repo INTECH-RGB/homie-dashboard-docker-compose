@@ -15,6 +15,7 @@ Homie Dashboard.
 ```bash
 git clone https://github.com/INTECH-RGBH/homie-dashboard-docker-compose.git
 ```
+* `cd homie-dashboard-docker-compose`
 * Tweak the configuration file at [homie-dashboard/settings.toml](homie-dashboard/settings.toml)
 * Run the stack:
 ```bash

@@ -1,10 +1,14 @@
 version: '2'
 services:
   homie-dashboard:
+    build:
+      context: ./homie-dashboard
     ports:
       - "80:35589"
     links:
       - mosquitto
   mosquitto:
+    build:
+      context: ./mosquitto
     ports:
       - "1883:1883"

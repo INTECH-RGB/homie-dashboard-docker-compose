@@ -1,3 +1,3 @@
 FROM homiedashboard/mosquitto:amd64
 
-COPY ../mosquitto.conf /mosquitto/config
+COPY mosquitto.conf /mosquitto/config
