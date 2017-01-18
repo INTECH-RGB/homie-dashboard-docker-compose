@@ -13,7 +13,7 @@ Homie Dashboard.
 * Install Git, Docker and Docker Compose
 * Clone this repository:
 ```bash
-git clone https://github.com/INTECH-RGBH/homie-dashboard-docker-compose.git
+git clone https://github.com/INTECH-RGB/homie-dashboard-docker-compose.git
 ```
 * `cd homie-dashboard-docker-compose`
 * Tweak the configuration file at [homie-dashboard/settings.toml](homie-dashboard/settings.toml)
