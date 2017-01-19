@@ -1,5 +1,14 @@
-# Password securing your Homie Dashboard
-password = "abcd"
+# Bindings configuration
+[bindings]
+
+  [bindings.aqara]
+    enabled = true
+
+    [bindings.aqara.gateway]
+      ip = "192.168.1.11"
+      key = "000000000000"
+  [bindings.yeelight]
+    enabled = true
 
 # Credentials to your MQTT broker
 [mqtt]
@@ -14,4 +23,5 @@ port = 1883
   password = "password"
 
   [homie-esp8266.mqtt]
-  host = "192.168.1.10" #
+  host = "192.168.1.10"
+  port = 1883
