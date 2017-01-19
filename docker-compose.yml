@@ -3,12 +3,21 @@ services:
   homie-dashboard:
     build:
       context: ./homie-dashboard
+      dockerfile: "./${ARCH:-amd64}/Dockerfile"
     ports:
-      - "80:35589"
+      - "35589"
     links:
       - mosquitto
   mosquitto:
     build:
       context: ./mosquitto
+      dockerfile: "./${ARCH:-amd64}/Dockerfile"
     ports:
       - "1883:1883"
+  caddy:
+    build:
+      context: ./caddy
+      dockerfile: "./${ARCH:-amd64}/Dockerfile"
+    ports:
+      - "80:80"
+      - "443:443"

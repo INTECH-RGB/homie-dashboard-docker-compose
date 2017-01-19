@@ -7,6 +7,7 @@ Homie Dashboard.
 
 * AMD64 and ARMhf support
 * Mosquitto embedded
+* TLS-secured
 
 ## Installation
 
@@ -16,9 +17,11 @@ Homie Dashboard.
 git clone https://github.com/INTECH-RGB/homie-dashboard-docker-compose.git
 ```
 * `cd homie-dashboard-docker-compose`
-* Tweak the configuration file at [homie-dashboard/settings.toml](homie-dashboard/settings.toml)
+* Tweak the configuration file at [./homie-dashboard/settings.toml](homie-dashboard/settings.toml)
+* Add your `cert.pem` and `key.pem` files in [./caddy](caddy/)
 * Run the stack:
 ```bash
-# Change `amd64` by `armhf` if needed
-docker-compose -f docker-compose.yml -f amd64.yml up -d
+# Replace `armhf` with `amd64` if needed
+# If no ARCH is provided, `amd64` is used by default
+ARCH=armhf docker-compose up -d
 ```

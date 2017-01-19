@@ -1,8 +1,0 @@
-version: '2'
-services:
-  homie-dashboard:
-    build:
-      dockerfile: ./armhf/Dockerfile
-  mosquitto:
-    build:
-      dockerfile: ./armhf/Dockerfile

@@ -1,8 +1,0 @@
-version: '2'
-services:
-  homie-dashboard:
-    build:
-      dockerfile: ./amd64/Dockerfile
-  mosquitto:
-    build:
-      dockerfile: ./amd64/Dockerfile
