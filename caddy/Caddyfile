@@ -1,6 +1,8 @@
 https://0.0.0.0:443 {
   tls /caddy/cert.pem /caddy/key.pem
-  proxy / homie-dashboard:35589
+  proxy / homie-dashboard:35589 {
+    websocket
+  }
 }
 
 http://0.0.0.0:80 {
